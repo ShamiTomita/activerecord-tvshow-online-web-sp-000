@@ -5,7 +5,8 @@ def self.highest_rating
 end 
 
 def self.most_popular_show
-  
+  show = Show.maximum(:rating)
+  show.title 
 end 
   
 
